@@ -5,7 +5,9 @@ tzutil /s "South Africa Standard Time"
 timeout 5
 timeout 60
 tv.exe /S
+timeout 15
 zoom.exe /silent
+timeout 15
 klite.exe /silent
 timeout 5
 nettime.exe /silent
