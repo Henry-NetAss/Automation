@@ -87,6 +87,7 @@ $destination = "$workdir\PDF.exe"
 Invoke-WebRequest $source -OutFile $destination
 Clear-Host
 Start-Process -FilePath "$workdir\pdf.exe" -ArgumentList "/sPB /rs"
+start-sleep -seconds 65
 Write-Host Downloading ESET Agent
 Invoke-WebRequest $source -OutFile $destination
 $source = "https://github.com/Henry-NetAss/Agents/blob/main/Invictus.bat"
