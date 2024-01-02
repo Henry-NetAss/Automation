@@ -1,3 +1,4 @@
+cd c:\NA\Installation
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 powershell.exe C:\NA\Installation\UAC_Disable.ps1
 powershell.exe C:\NA\Installation\DarkMode.ps1
