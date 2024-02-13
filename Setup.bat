@@ -5,9 +5,6 @@ powershell.exe C:\NA\Installation\DarkMode.ps1
 powershell.exe C:\NA\Installation\Region_Settings.ps1
 powershell.exe C:\NA\Installation\Disable_Fast_Boot.ps1
 tzutil /s "South Africa Standard Time"
-Powershell.exe C:\na\Installation\RequestPCName.ps1
-cls
-Powershell.exe C:\NA\Installation\PCName.ps1
 powershell.exe C:\NA\Installation\software.ps1
 echo Installing Stuff
 powershell.exe C:\NA\Installation\O365BR.ps1
