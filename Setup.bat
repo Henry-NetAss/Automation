@@ -22,13 +22,6 @@ powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 powershell.exe C:\NA\Installation\Anydesksilent.ps1
 timeout 5
 cls
-echo Installing Stuff
-nettime.exe /silent
-timeout 20
-cls
-tsprint.exe /silent
-timeout 5
-cls
 powershell.exe C:\NA\Installation\remove_printers.ps1
 cls
 powershell.exe C:\NA\Installation\updates.ps1
