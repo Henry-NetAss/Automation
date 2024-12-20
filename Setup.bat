@@ -7,7 +7,7 @@ powershell.exe C:\NA\Installation\Disable_Fast_Boot.ps1
 tzutil /s "South Africa Standard Time"
 powershell.exe C:\NA\Installation\software.ps1
 echo Installing Stuff
-powershell.exe C:\NA\Installation\O365BR.ps1
+powershell.exe C:\NA\Installation\Install-Microsoft365.ps1
 timeout 5
 cls
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
