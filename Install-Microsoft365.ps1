@@ -1,4 +1,3 @@
-send-osnotification -body 'Downloading and Installing Office 365' -Title 'Network Associates'
 [CmdletBinding(DefaultParameterSetName = 'XMLFile')]
 param(
   [Parameter(ParameterSetName = 'XMLFile')][String]$ConfigurationXMLFile,
