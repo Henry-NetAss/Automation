@@ -9,7 +9,7 @@ install-module -name POSHNOTIFY -Scope CurrentUser -Force
 $workdir = "c:\na\installation\"
 set-location C:\NA\Installation
 Clear-Host
-send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
+write-host y|send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
 write-host Downloading Teamviewer
 $source = "https://download.teamviewer.com/full"
 $destination = "$workdir\TV.exe"
