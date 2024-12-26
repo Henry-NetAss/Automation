@@ -1,4 +1,7 @@
 cd c:\NA\Installation
+powercfg -change -monitor-timeout-ac 0
+powercfg -change -standby-timeout-ac 0
+powercfg -change -hibernate-timeout-ac 0
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 powershell.exe c:\na\installation\website.ps1
 powershell.exe C:\NA\Installation\UAC_Disable.ps1
