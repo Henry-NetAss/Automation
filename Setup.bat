@@ -1,6 +1,5 @@
 cd c:\NA\Installation
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
-powershell.exe(New-Object -ComObject Shell.Application).MinimizeAll()
 powershell.exe c:\na\installation\website.ps1
 powershell.exe C:\NA\Installation\UAC_Disable.ps1
 powershell.exe C:\NA\Installation\DarkMode.ps1
