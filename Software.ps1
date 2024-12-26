@@ -78,6 +78,7 @@ start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading Adobe' -Title 'Network Associates'
 Invoke-WebRequest $source -OutFile $destination
+stop-process -name egui
 $source = "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1502320053/AcroRdrDC1502320053_en_US.exe"
 $destination = "$workdir\PDF.exe"
 Invoke-WebRequest $source -OutFile $destination
