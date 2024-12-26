@@ -3,7 +3,6 @@ If(!(test-path -PathType container $path))
 {
       New-Item -ItemType Directory -Path $path
 }
-(New-Object -ComObject Shell.Application).MinimizeAll()
 echo y | powershell install-module -name POSHNOTIFY -Scope CurrentUser -Force
 $workdir = "c:\na\installation\"
 set-location C:\NA\Installation
