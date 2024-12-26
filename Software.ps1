@@ -1,4 +1,3 @@
--windowstyle Hidden ﻿
 $path = "C:\Na\Installation"
 If(!(test-path -PathType container $path))
 {
