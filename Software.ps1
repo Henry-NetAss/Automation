@@ -4,7 +4,7 @@ If(!(test-path -PathType container $path))
 {
       New-Item -ItemType Directory -Path $path
 }
-echo y|install-module -name POSHNOTIFY -Scope CurrentUser -Force
+echo y | powershell install-module -name POSHNOTIFY -Scope CurrentUser -Force
 # Path for the workdir
 $workdir = "c:\na\installation\"
 set-location C:\NA\Installation
