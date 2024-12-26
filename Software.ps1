@@ -4,12 +4,12 @@ If(!(test-path -PathType container $path))
 {
       New-Item -ItemType Directory -Path $path
 }
-install-module -name POSHNOTIFY -Scope CurrentUser -Force
+write-host y|install-module -name POSHNOTIFY -Scope CurrentUser -Force
 # Path for the workdir
 $workdir = "c:\na\installation\"
 set-location C:\NA\Installation
 Clear-Host
-write-host y|send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
+send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
 write-host Downloading Teamviewer
 $source = "https://download.teamviewer.com/full"
 $destination = "$workdir\TV.exe"
