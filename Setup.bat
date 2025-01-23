@@ -25,5 +25,8 @@ timeout 5
 cls
 powershell.exe C:\NA\Installation\remove_printers.ps1
 cls
+powershell.exe C:\NA\Installation\NIC_Power_Management.ps1
+timeout 10
+cls
 powershell.exe C:\NA\Installation\updates.ps1
 exit
