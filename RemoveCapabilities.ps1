@@ -36,7 +36,7 @@ $removeCommand = {
   }
 };
 $type = 'Capability';
-$logfile = 'C:\Windows\Setup\Scripts\RemoveCapabilities.log';
+$logfile = 'C:\NA\Installation\RemoveCapabilities.log';
 & {
 	$installed = & $getCommand;
 	foreach( $selector in $selectors ) {
