@@ -55,7 +55,7 @@ $removeCommand = {
   }
 };
 $type = 'Package';
-$logfile = 'C:\Windows\Setup\Scripts\RemovePackages.log';
+$logfile = 'C:\NA\Installation\RemovePackages.log';
 & {
 	$installed = & $getCommand;
 	foreach( $selector in $selectors ) {
