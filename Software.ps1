@@ -8,11 +8,7 @@ $workdir = "c:\na\installation\"
 set-location C:\NA\Installation
 Clear-Host
 send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
-$source = "https://download.teamviewer.com/full"
-$destination = "$workdir\TV.exe"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Installing TeamViewer' -Title 'Network Associates'
-.\TV.exe /S
+winget install --id TeamViewer.TeamViewer --silent
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading Zoom' -Title 'Network Associates'
@@ -28,27 +24,15 @@ $destination = "$workdir\Klite.exe"
 Invoke-WebRequest $source -OutFile $destination
 Clear-Host
 send-osnotification -body 'Downloading JDK8' -Title 'Network Associates'
-$source = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u352-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u352b08.msi"
-$destination = "$workdir\Openjdk8.msi"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Installing JDK8' -Title 'Network Associates'
-.\openjdk8.msi /passive
+winget install --id EclipseAdoptium.Temurin.8.JDK --silent
 start-sleep -seconds 15
 Clear-Host
 send-osnotification -body 'Downloading JDK11' -Title 'Network Associates'
-$source = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.17%2B8/OpenJDK11U-jdk_x64_windows_hotspot_11.0.17_8.msi"
-$destination = "$workdir\Openjdk11.msi"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Installing JDK11' -Title 'Network Associates'
-.\openjdk11.msi /passive
+winget install --id EclipseAdoptium.Temurin.11.JDK --silent
 start-sleep -seconds 15
 Clear-Host
 send-osnotification -body 'Downloading Google Chrome' -Title 'Network Associates'
-$source = "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B5BDB0487-C973-62F8-C2C9-4D5281D83E08%7D%26lang%3Den%26browser%3D3%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/chrome/install/ChromeStandaloneSetup64.exe"
-$destination = "$workdir\Chrome.exe"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Installing Google Chrome' -Title 'Network Associates'
-.\chrome.exe /install|taskkill /f /im chrome.exe
+winget install --id Google.Chrome.EXE --silent
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading TS Print' -Title 'Network Associates'
@@ -60,26 +44,17 @@ send-osnotification -body 'Installing TS Print' -Title 'Network Associates'
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading NetTime' -Title 'Network Associates'
-$source = "https://www.timesynctool.com/NetTimeSetup-314.exe"
-$destination = "$workdir\Nettime.exe"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Downloading NetTime' -Title 'Network Associates'
-.\nettime.exe /silent
+winget install --name NetTime --silent
 Clear-Host
 send-osnotification -body 'Downloading ESET Endpoint Security' -Title 'Network Associates'
-# Path for the workdir
-$workdir = "c:\na\installation\"
-$source = "https://download.eset.com/com/eset/apps/business/ees/windows/latest/ees_nt64.msi"
-$destination = "$workdir\ESET.msi"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Installing ESET Endpoint Security' -Title 'Network Associates'
-.\eset.msi /passive
+winget install --id ESET.EndpointSecurity --silent
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading Adobe' -Title 'Network Associates'
-Invoke-WebRequest $source -OutFile $destination
-stop-process -name egui
-$source = "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1502320053/AcroRdrDC1502320053_en_US.exe"
-$destination = "$workdir\PDF.exe"
-Invoke-WebRequest $source -OutFile $destination
+winget install --id Adobe.Acrobat.Reader.32-bit --silent
+send-osnotification -body 'Whatsapp' -Title 'Network Associates'
+#Install whatsapp
+winget install --id 9NKSQGP7F2NH --silent
+send-osnotification -body 'Microsoft Office' -Title 'Network Associates'
+winget install --id Microsoft.Office --verbose
 Clear-Host
