@@ -1,3 +1,4 @@
+PowerShell.exe -windowstyle hidden 
 $path = "C:\Na\Installation"
 If(!(test-path -PathType container $path))
 {
