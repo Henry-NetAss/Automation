@@ -23,7 +23,7 @@ $removeCommand = {
   }
 };
 $type = 'Feature';
-$logfile = 'C:\Windows\Setup\Scripts\RemoveFeatures.log';
+$logfile = 'C:\NA\Installation\RemoveFeatures.log';
 & {
 	$installed = & $getCommand;
 	foreach( $selector in $selectors ) {
