@@ -8,7 +8,7 @@ $workdir = "c:\na\installation\"
 set-location C:\NA\Installation
 Clear-Host
 send-osnotification -body 'AnyDesk' -Title 'Network Associates'
-winget install --name AnyDesk --silent
+echo y|winget install --name AnyDesk --silent
 send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
 winget install --id TeamViewer.TeamViewer --silent
 start-sleep -seconds 5
