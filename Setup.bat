@@ -9,6 +9,7 @@ powershell.exe C:\NA\Installation\DarkMode.ps1
 powershell.exe C:\NA\Installation\Region_Settings.ps1
 powershell.exe C:\NA\Installation\Disable_Fast_Boot.ps1
 tzutil /s "South Africa Standard Time"
+PowerShell.exe -windowstyle hidden 
 powershell.exe C:\NA\Installation\software.ps1
 timeout 5
 powershell.exe C:\NA\Installation\Anydesksilent.ps1
