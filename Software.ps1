@@ -13,6 +13,7 @@ echo y|winget install --name AnyDesk --silent
 send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
 echo y|winget install --id TeamViewer.TeamViewer --silent
 start-sleep -seconds 5
+.\anydesksilent.ps1
 Clear-Host
 send-osnotification -body 'Downloading Zoom' -Title 'Network Associates'
 $source = "https://zoom.us/client/5.12.6.10137/ZoomInstallerFull.exe?archType=x64"
@@ -59,5 +60,5 @@ send-osnotification -body 'Whatsapp' -Title 'Network Associates'
 #Install whatsapp
 echo y|winget install --id 9NKSQGP7F2NH --silent
 send-osnotification -body 'Microsoft Office' -Title 'Network Associates'
-echo y|winget install --id Microsoft.Office --verbose
+echo y|winget install --id Microsoft.Office --silent
 Clear-Host
