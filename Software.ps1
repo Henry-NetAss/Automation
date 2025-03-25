@@ -56,6 +56,8 @@ start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading Adobe' -Title 'Network Associates'
 echo y|winget install --id Adobe.Acrobat.Reader.32-bit --silent
+send-osnotification -body 'Windows Scan' -Title 'Network Associates'
+echo y|winget install --id 9WZDNCRFJ3PV --silent
 send-osnotification -body 'Whatsapp' -Title 'Network Associates'
 #Install whatsapp
 echo y|winget install --id 9NKSQGP7F2NH --silent
