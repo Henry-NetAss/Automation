@@ -4,6 +4,7 @@ powercfg -change -standby-timeout-ac 0
 powercfg -change -hibernate-timeout-ac 0
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 powershell.exe c:\na\installation\website.ps1
+powershell.exe c:\na\installation\winget_enable.ps1
 powershell.exe c:\na\installation\VisualFX.ps1
 powershell.exe C:\NA\Installation\UAC_Disable.ps1
 powershell.exe C:\NA\Installation\DarkMode.ps1
