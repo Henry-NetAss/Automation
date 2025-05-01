@@ -50,10 +50,6 @@ Clear-Host
 send-osnotification -body 'Downloading NetTime' -Title 'Network Associates'
 echo y|winget install --name NetTime --silent
 Clear-Host
-send-osnotification -body 'Downloading ESET Endpoint Security' -Title 'Network Associates'
-echo y|winget install --id ESET.EndpointSecurity --silent
-start-sleep -seconds 5
-Clear-Host
 send-osnotification -body 'Downloading Adobe' -Title 'Network Associates'
 echo y|winget install --id Adobe.Acrobat.Reader.32-bit --silent
 send-osnotification -body 'Windows Scan' -Title 'Network Associates'
@@ -64,3 +60,7 @@ echo y|winget install --id 9NKSQGP7F2NH --silent
 send-osnotification -body 'Microsoft Office' -Title 'Network Associates'
 echo y|winget install --id Microsoft.Office --silent
 Clear-Host
+Clear-Host
+send-osnotification -body 'Downloading ESET Endpoint Security' -Title 'Network Associates'
+echo y|winget install --id ESET.EndpointSecurity --silent
+start-sleep -seconds 5
