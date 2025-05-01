@@ -37,5 +37,7 @@ cls
 powershell.exe -WindowStyle Hidden C:\NA\Installation\NIC_Power_Management.ps1
 timeout 20
 cls
+powershell.exe c:\Na\Installation\checkapps.ps1
+timeout 50
 powershell.exe -WindowStyle Hidden C:\NA\Installation\updates.ps1
 exit
