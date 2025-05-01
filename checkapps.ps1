@@ -56,7 +56,7 @@ $AdobeExePath = "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.
 if (Test-Path $AdobeExePath) {
     Write-Host "Adobe is installed."
 
-} else { write-host "Adobe is not inistalled"
+} else { write-host "Adobe is not installed"
 Write-Output y|winget install --id Adobe.Acrobat.Reader.32-bit --silent
 }
 
