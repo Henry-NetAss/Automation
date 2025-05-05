@@ -15,14 +15,6 @@ echo y|winget install --id TeamViewer.TeamViewer --silent
 start-sleep -seconds 5
 .\anydesksilent.ps1
 Clear-Host
-send-osnotification -body 'Downloading Zoom' -Title 'Network Associates'
-$source = "https://zoom.us/client/5.12.6.10137/ZoomInstallerFull.exe?archType=x64"
-$destination = "$workdir\Zoom.exe"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Installing Zoom' -Title 'Network Associates'
-.\Zoom.exe /silent
-start-sleep -seconds 5
-Clear-Host
 $source = "https://files3.codecguide.com/K-Lite_Codec_Pack_1725_Basic.exe"
 $destination = "$workdir\Klite.exe"
 Invoke-WebRequest $source -OutFile $destination
