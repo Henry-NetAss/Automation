@@ -55,4 +55,4 @@ Clear-Host
 Clear-Host
 send-osnotification -body 'Downloading ESET Endpoint Security' -Title 'Network Associates'
 echo y|winget install --id ESET.EndpointSecurity --silent
-start-sleep -seconds 5
+start-sleep -seconds 4
