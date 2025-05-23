@@ -611,7 +611,7 @@ $adapter.AllowComputerToTurnOffDevice = 'Disabled'
 $adapter | Set-NetAdapterPowerManagement
 }
 
-start-sleep -seconds 5
+start-sleep -seconds 60
 
 Function InstallWindowsModules
 {
