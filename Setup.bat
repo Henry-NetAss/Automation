@@ -41,6 +41,7 @@ powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 powershell.exe c:\na\Installation\Desktop_Shortcuts.ps1
 powershell.exe c:\na\installation\taskbaricons.ps1
 timeout 50
+Powershell.exe c:\na\installation\DisableSearchBoxSuggestion.ps1
 Powershell.exe c:\na\installation\PCName.ps1
 powershell.exe C:\NA\Installation\updates.ps1
  
