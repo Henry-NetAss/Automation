@@ -9,7 +9,7 @@ $workdir = "c:\na\installation\"
 set-location C:\NA\Installation
 Clear-Host
 send-osnotification -body 'AnyDesk' -Title 'Network Associates'
-echo y|winget install --name AnyDesk --silent
+echo y|winget install --name AnyDesk
 $NewPassword = 'Supp0rt@NA123'
 Invoke-Command -ScriptBlock {
     Param($NewPassword)
@@ -17,20 +17,13 @@ Invoke-Command -ScriptBlock {
     Start-Process cmd.exe -ArgumentList "/c $Expression"
 } -ArgumentList $NewPassword
 send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
-echo y|winget install --id TeamViewer.TeamViewer --silent
-start-sleep -seconds 5
-.\anydesksilent.ps1
-Clear-Host
-$source = "https://files3.codecguide.com/K-Lite_Codec_Pack_1725_Basic.exe"
-$destination = "$workdir\Klite.exe"
-Invoke-WebRequest $source -OutFile $destination
-Clear-Host
+echo y|winget install --id TeamViewer.TeamViewer
 send-osnotification -body 'Downloading JDK8' -Title 'Network Associates'
-echo y|winget install --id EclipseAdoptium.Temurin.8.JDK --silent
+echo y|winget install --id EclipseAdoptium.Temurin.8.JDK
 start-sleep -seconds 15
 Clear-Host
 send-osnotification -body 'Downloading JDK11' -Title 'Network Associates'
-echo y|winget install --id EclipseAdoptium.Temurin.11.JDK --silent
+echo y|winget install --id EclipseAdoptium.Temurin.11.JDK
 start-sleep -seconds 15
 Clear-Host
 send-osnotification -body 'Downloading Google Chrome' -Title 'Network Associates'
@@ -39,23 +32,20 @@ echo y|winget install --id Google.Chrome --Location "C:\Program Files\Google"
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading TS Print' -Title 'Network Associates'
-echo y|winget install --id TerminalWorks.TSPrintClient --silent
+echo y|winget install --id TerminalWorks.TSPrintClient
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading NetTime' -Title 'Network Associates'
-echo y|winget install --name NetTime --silent
+echo y|winget install --name NetTime
 Clear-Host
 send-osnotification -body 'Downloading Adobe' -Title 'Network Associates'
-echo y|winget install --id Adobe.Acrobat.Reader.32-bit --silent
+echo y|winget install --id Adobe.Acrobat.Reader.32-bit
 send-osnotification -body 'Windows Scan' -Title 'Network Associates'
-echo y|winget install --id 9WZDNCRFJ3PV --silent
+echo y|winget install --id 9WZDNCRFJ3PV
 send-osnotification -body 'Whatsapp' -Title 'Network Associates'
 #Install whatsapp
-echo y|winget install --id 9NKSQGP7F2NH --silent
+echo y|winget install --id 9NKSQGP7F2NH
 send-osnotification -body 'Microsoft Office' -Title 'Network Associates'
-echo y|winget install --id Microsoft.Office --silent
-Clear-Host
-Clear-Host
+echo y|winget install --id Microsoft.Office
 send-osnotification -body 'Downloading ESET Endpoint Security' -Title 'Network Associates'
-echo y|winget install --id ESET.EndpointSecurity --silent
-start-sleep -seconds 4
+echo y|winget install --id ESET.EndpointSecurity
