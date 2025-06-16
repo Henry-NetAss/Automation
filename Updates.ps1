@@ -2,7 +2,7 @@
     Write-Host "`nUpdating OS."
 
     # Open Eventlogs for Windows Update
-    Start-Process powershell -ArgumentList "-noexit", "-noprofile", "-command &{Get-Content C:\Windows\SoftwareDistribution\ReportingEvents.log -Tail 1 -Wait}"
+    Start-Process powershell -ArgumentList "-noexit", "-noprofile", "-command &{Get-Content C:\Windows\SoftwareDistribution\ReportingEvents.log -Tail 1 -Wait}" -windowstyle hidden
 
     #Define update criteria.
     $Criteria = "IsInstalled=0"
@@ -24,7 +24,7 @@
 
     $Result = $Installer.Install()
 
-    If ($Result.rebootRequired) { shutdown.exe /t 0 /r }
+    If ($Result.rebootRequired) { shutdown.exe /t 30 /r }
 }
 
 UpdateOS
