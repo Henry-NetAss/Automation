@@ -26,22 +26,17 @@ powershell.exe C:\NA\Installation\RemovePackages.ps1
 powershell.exe C:\NA\Installation\UserOnce.ps1
 tzutil /s "South Africa Standard Time" 
 powershell.exe C:\NA\Installation\software.ps1
-timeout 5
-powershell.exe C:\NA\Installation\Anydesksilent.ps1
-cls
-timeout 5
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 powershell.exe C:\NA\Installation\remove_printers.ps1
-cls
 powershell.exe C:\NA\Installation\NIC_Power_Management.ps1
-timeout 20
+timeout 50
 powershell.exe c:\Na\Installation\checkapps.ps1
+timeout 20
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 powershell.exe c:\na\Installation\Desktop_Shortcuts.ps1
 powershell.exe c:\na\installation\taskbaricons.ps1
-timeout 50
-Powershell.exe c:\na\installation\DisableSearchBoxSuggestion.ps1
+timeout 5
 Powershell.exe c:\na\installation\PCName.ps1
+powershell.exe c:\na\Installation\DisableSearchBoxSuggestion.ps1
 powershell.exe C:\NA\Installation\updates.ps1
- 
 exit
