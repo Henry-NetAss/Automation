@@ -27,7 +27,7 @@ echo y|winget install --id EclipseAdoptium.Temurin.11.JDK
 start-sleep -seconds 15
 Clear-Host
 send-osnotification -body 'Downloading Google Chrome' -Title 'Network Associates'
-mkdir "c:\program files\google"
+mkdir "c:\program files\Google"
 echo y|winget install --id Google.Chrome --Location "C:\Program Files\Google"
 start-sleep -seconds 5
 Clear-Host
