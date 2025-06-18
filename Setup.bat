@@ -40,5 +40,6 @@ timeout 5
 Powershell.exe c:\na\installation\PCName.ps1
 powershell.exe c:\na\Installation\DisableSearchBoxSuggestion.ps1
 powershell.exe C:\NA\Installation\Region_Settings.ps1
+powershell.exe C:\NA\Installation\DefaultAppSet.ps1
 powershell.exe C:\NA\Installation\updates.ps1
 exit
