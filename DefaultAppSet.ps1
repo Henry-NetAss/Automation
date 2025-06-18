@@ -7,9 +7,6 @@ $OSVersion = $OSInfo.Version
 # Extract the OS caption (e.g., "Microsoft Windows 10 Enterprise")
 $OSCaption = $OSInfo.Caption
 
-# Define the path to the script to be run
-
-
 # Check the OS version or caption and conditionally run the script
 if ($OSCaption -like "*Windows 10*") {
     Write-Host "Detected Windows 10"
