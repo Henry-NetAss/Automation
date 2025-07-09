@@ -49,3 +49,6 @@ send-osnotification -body 'Microsoft Office' -Title 'Network Associates'
 echo y|winget install --id Microsoft.Office
 send-osnotification -body 'Downloading ESET Endpoint Security' -Title 'Network Associates'
 echo y|winget install --id ESET.EndpointSecurity
+echo y|winget uninstall --id Microsoft.Onedrive
+start-sleep -seconds 10
+echo y|winget install --id Microsoft.Onedrive
