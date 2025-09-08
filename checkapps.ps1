@@ -7,17 +7,6 @@ if (Test-Path $anydeskExePath) {
     write-host "Anydesk is not installed"
     Write-Output y|winget install --id anydesk.anydesk
 }
-
-# ESET
-$EsetExePath = "C:\Program Files\ESET\ESET Security\ecmds.exe"
-
-if (Test-Path $EsetExePath) {
-    Write-Host "Eset is installed."
-} else {
-    Write-Host "Eset is not installed"
-    Write-Output y|winget install --id ESET.EndpointSecurity --silent
-}
-
 # Chrome
 
 $ChromeExePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
@@ -57,11 +46,3 @@ Write-Output y|winget install --id Adobe.Acrobat.Reader.32-bit --silent
 }
 
 
-$OfficeExePath = "C:\Program Files\Microsoft Office\root\Office16\winword.exe"
-
-if (Test-Path $OfficeExePath) {
-    Write-Host "Office 365 is installed."
-
-} else { write-host "Office 365 is not inistalled"
-Write-Output y|winget install --id Microsoft.Office --silent
-}
